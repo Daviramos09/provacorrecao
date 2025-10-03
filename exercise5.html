@@ -10,13 +10,14 @@ let catalogo = [89.90, 750.00, 1200.50, 40.00];
 let novoCatalogo = []
 let aumento = informado / 100
 let numeroComAumento ;
-
+let soma = 0
 for(numero of catalogo) {
     numeroComAumento = numero * aumento
     novoCatalogo.push(numeroComAumento)
-    novoCatalogo = novoCatalogo + novoCatalogo
+   soma += numeroComAumento
+    
 }
 
 
-document.write(`a lista dos novos preços é de ${novoCatalogo}`)
+document.write(`a lista dos novos preços é de ${novoCatalogo} <p> e a soma dos produtos é de ${soma}`)
 </script>

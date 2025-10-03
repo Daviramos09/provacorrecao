@@ -1,0 +1,18 @@
+<script>
+    /*
+    Maiores de Idade
+Considere o seguinte array com idade: [15, 17, 19, 52, 14, 25]s.
+Peça para o usuário informar a sua própria idade e a insira no Array.
+Usando for...of, crie um novo array contendo apenas as idades que já atingiram a maioridade (18).
+Exiba a lista de idades acima de 18 anos.
+    */
+const idades = [15, 17, 19, 52, 14, 25]
+const idadeUsuario = prompt(`qual a sua idade`) 
+const maioridade = []
+idades.push(idadeUsuario)
+for (idade of idades) {
+if(idade >= 18)
+ maioridade.push(idade)
+}
+document.write(`a lista dos maiores de idade é de ${maioridade}`);
+</script>
