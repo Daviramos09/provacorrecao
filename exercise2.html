@@ -11,9 +11,10 @@ emails.push(emailInformado)
 let emailsValidos = []
 
 for (email of emails) {
-    if(emails.indexOf(`@` === true))
-    emailsValidos.push(email)
+    for(letra of email){
+    if(letra === "@")
+    emailsValidos.push(email)}
 }
 
-document.write(`os a lista dos emails validos é ${emailsValidos}`);
+document.write(`os a lista dos emails validos é ${emailsValidos.join(", ")}`);
 </script>
